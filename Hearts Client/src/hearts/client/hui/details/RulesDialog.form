@@ -3,7 +3,9 @@
 <Form version="1.3" maxVersion="1.7" type="org.netbeans.modules.form.forminfo.JDialogFormInfo">
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="2"/>
-    <Property name="resizable" type="boolean" value="false"/>
+    <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+      <Dimension value="[500, 400]"/>
+    </Property>
   </Properties>
   <SyntheticProperties>
     <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
@@ -20,28 +22,14 @@
     <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
   </AuxValues>
 
-  <Layout>
-    <DimensionLayout dim="0">
-      <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="1" attributes="0">
-              <EmptySpace max="-2" attributes="0"/>
-              <Component id="jTabbedPane1" pref="584" max="32767" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
-          </Group>
-      </Group>
-    </DimensionLayout>
-    <DimensionLayout dim="1">
-      <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="1" attributes="0">
-              <EmptySpace max="-2" attributes="0"/>
-              <Component id="jTabbedPane1" pref="405" max="32767" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
-          </Group>
-      </Group>
-    </DimensionLayout>
-  </Layout>
+  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
   <SubComponents>
     <Container class="javax.swing.JTabbedPane" name="jTabbedPane1">
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+          <BorderConstraints direction="Center"/>
+        </Constraint>
+      </Constraints>
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout"/>
       <SubComponents>
@@ -63,8 +51,10 @@
               <Properties>
                 <Property name="columns" type="int" value="20"/>
                 <Property name="editable" type="boolean" value="false"/>
+                <Property name="lineWrap" type="boolean" value="true"/>
                 <Property name="rows" type="int" value="5"/>
-                <Property name="text" type="java.lang.String" value="W grze bierze udzia&#x142; pe&#x142;na talia kart (52 karty). &#xa;Starsze&#x144;stwo kart od asa do dw&#xf3;jki. Jedn&#x105; kolejk&#x119; w kt&#xf3;rej ka&#x17c;dy gracz(wg wskaz. zegara) &#xa;k&#x142;adzie jedn&#x105; kart&#x119; nazywamy lew&#x105;. Pierwsz&#x105; lew&#x119; rozpoczyna gracz  na lewo od rozdaj&#x105;cego, &#xa;ka&#x17c;d&#x105; nast&#x119;pn&#x105; - gracz kt&#xf3;ry zabra&#x142; poprzedni&#x105; lew&#x119;. Gracze rozdaj&#x105; kolejno wg ruchu wskaz&#xf3;wek &#xa;zegara. Kolorem wistuj&#x105;cym jest kolor karty wyrzuconej jako pierwsza w lewie.&#xa;&#xa;&#x15b;lizg - je&#x17c;eli w rozdaniu kt&#xf3;ry&#x15b; z graczy nie we&#x17a;mie ani jednej lewy&#xa;max &#x2013; w rozdaniu jeden gracz bierze wszystkie lewy&#xa;&#xa;Gra sk&#x142;ada si&#x119; z 3 cz&#x119;&#x15b;ci:&#xa;- zb&#xf3;j (punktowanie ujemne &#x2013; 4 rozdania) &#x2013; nale&#x17c;y nie bra&#x107; lewych&#xa;- odgrywka (punktowanie dodatnie &#x2013; 4 rozdania) &#x2013; nale&#x17c;y bra&#x107; lewe&#xa;- rozb&#xf3;jnik (dodatkowe rozdania za &#x15b;lizgi i maxy &#x2013; rozgrywka w bez atu)&#xa;&#xa;W pierwszej lewie nie wolno odrzuci&#x107; kr&#xf3;la kier, a kiery s&#x105; kolorem granym w&#xf3;wczas &#xa;gdy wistuj&#x105;cy nie ma w r&#x119;ce innego koloru. Mo&#x17c;na kiery te&#x17c; wyrzuca&#x107; wtedy &#xa;gdy nie posiadamy koloru wistowanego. &#xa;&#xa;Nie maj&#x105;c do koloru odrzucamy dowoln&#x105; kart&#x119;.&#xa;&#xa;Przyznawanie dodatkowych rozda&#x144; w bez atu (rozb&#xf3;jnik) w zb&#xf3;ju lub odgrywce:&#xa;- za ka&#x17c;de x2 &#x2013; 1 rozdanie&#xa;- za ka&#x17c;de x3 &#x2013; 2 rozdania&#xa;- za maxa &#x2013; 3 rozdania"/>
+                <Property name="text" type="java.lang.String" value="W grze bierze udzia&#x142; pe&#x142;na talia kart (52 karty). &#xa;Starsze&#x144;stwo kart od asa do dw&#xf3;jki. Jedn&#x105; kolejk&#x119; w kt&#xf3;rej ka&#x17c;dy gracz(wg wskaz. zegara) k&#x142;adzie jedn&#x105; kart&#x119; nazywamy lew&#x105;. Pierwsz&#x105; lew&#x119; rozpoczyna gracz  na lewo od rozdaj&#x105;cego, ka&#x17c;d&#x105; nast&#x119;pn&#x105; - gracz kt&#xf3;ry zabra&#x142; poprzedni&#x105; lew&#x119;. Gracze rozdaj&#x105; kolejno wg ruchu wskaz&#xf3;wek zegara. Kolorem wistuj&#x105;cym jest kolor karty wyrzuconej jako pierwsza w lewie.&#xa;&#xa;&#x15b;lizg - je&#x17c;eli w rozdaniu kt&#xf3;ry&#x15b; z graczy nie we&#x17a;mie ani jednej lewy&#xa;max &#x2013; w rozdaniu jeden gracz bierze wszystkie lewy&#xa;&#xa;Gra sk&#x142;ada si&#x119; z 3 cz&#x119;&#x15b;ci:&#xa;- zb&#xf3;j (punktowanie ujemne &#x2013; 4 rozdania) &#x2013; nale&#x17c;y nie bra&#x107; lewych&#xa;- odgrywka (punktowanie dodatnie &#x2013; 4 rozdania) &#x2013; nale&#x17c;y bra&#x107; lewe&#xa;- rozb&#xf3;jnik (dodatkowe rozdania za &#x15b;lizgi i maxy &#x2013; rozgrywka w bez atu)&#xa;&#xa;W pierwszej lewie nie wolno odrzuci&#x107; kr&#xf3;la kier, a kiery s&#x105; kolorem granym w&#xf3;wczas gdy wistuj&#x105;cy nie ma w r&#x119;ce innego koloru. Mo&#x17c;na kiery te&#x17c; wyrzuca&#x107; wtedy gdy nie posiadamy koloru wistowanego. &#xa;&#xa;Nie maj&#x105;c do koloru odrzucamy dowoln&#x105; kart&#x119;.&#xa;&#xa;Przyznawanie dodatkowych rozda&#x144; w bez atu (rozb&#xf3;jnik) w zb&#xf3;ju lub odgrywce:&#xa;- za ka&#x17c;de x2 &#x2013; 1 rozdanie&#xa;- za ka&#x17c;de x3 &#x2013; 2 rozdania&#xa;- za maxa &#x2013; 3 rozdania"/>
+                <Property name="wrapStyleWord" type="boolean" value="true"/>
               </Properties>
             </Component>
           </SubComponents>
@@ -102,23 +92,17 @@
             </Constraint>
           </Constraints>
 
-          <Layout>
-            <DimensionLayout dim="0">
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="jScrollPane3" alignment="0" pref="579" max="32767" attributes="0"/>
-              </Group>
-            </DimensionLayout>
-            <DimensionLayout dim="1">
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="jScrollPane3" alignment="0" pref="377" max="32767" attributes="0"/>
-              </Group>
-            </DimensionLayout>
-          </Layout>
+          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
           <SubComponents>
             <Container class="javax.swing.JScrollPane" name="jScrollPane3">
               <AuxValues>
                 <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
               </AuxValues>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+                  <BorderConstraints direction="Center"/>
+                </Constraint>
+              </Constraints>
 
               <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
               <SubComponents>
@@ -126,8 +110,10 @@
                   <Properties>
                     <Property name="columns" type="int" value="20"/>
                     <Property name="editable" type="boolean" value="false"/>
+                    <Property name="lineWrap" type="boolean" value="true"/>
                     <Property name="rows" type="int" value="5"/>
-                    <Property name="text" type="java.lang.String" value="Dodatkowo w odgrywce i rozb&#xf3;jniku w ka&#x17c;dym rozdaniu przed pierwsz&#x105; lew&#x105; ma miejsce licytacja &#xa;prawa do wistowania i wyboru atu (tylko odgrywka, bo rozb&#xf3;jnik w bez atu) w zamian za lewy &#xa;zdobyte przez danego u&#x17c;ytkownika (po zako&#x144;czeniu rozdania od stanu punkt&#xf3;w zwyci&#x119;zcy licytacji&#xa;odejmowane jest 10pkt * wylicytowana ilo&#x15b;&#x107; lew).&#xa;&#xa;&#xa;Przebieg licytacji:&#xa;- posiadaj&#x105;cy prawo wistowania decyduje czy chce odda&#x107; to prawo na licytacje&#xa;- pozostali u&#x17c;ytkownicy decyduj&#x105; czy chc&#x105; wzi&#x105;&#x107; udzia&#x142; w licytacji i deklaruj&#x105; ilo&#x15b;&#x107; lew, kt&#xf3;re chc&#x105;&#xa;zap&#x142;aci&#x107;&#xa;- licytacj&#x119; (o ile mia&#x142;a miejsce) wygrywa gracz, kt&#xf3;ry zadeklarowa&#x142; najwi&#x119;ksz&#x105; ilo&#x15b;&#x107; lew"/>
+                    <Property name="text" type="java.lang.String" value="Dodatkowo w odgrywce i rozb&#xf3;jniku w ka&#x17c;dym rozdaniu przed pierwsz&#x105; lew&#x105; ma miejsce licytacja prawa do wistowania i wyboru atu (tylko odgrywka, bo rozb&#xf3;jnik w bez atu) w zamian za lewy zdobyte przez danego u&#x17c;ytkownika (po zako&#x144;czeniu rozdania od stanu punkt&#xf3;w zwyci&#x119;zcy licytacji odejmowane jest 10pkt * wylicytowana ilo&#x15b;&#x107; lew).&#xa;&#xa;&#xa;Przebieg licytacji:&#xa;- posiadaj&#x105;cy prawo wistowania decyduje czy chce odda&#x107; to prawo na licytacje,&#xa;- pozostali u&#x17c;ytkownicy decyduj&#x105; czy chc&#x105; wzi&#x105;&#x107; udzia&#x142; w licytacji i deklaruj&#x105; ilo&#x15b;&#x107; lew, kt&#xf3;re chc&#x105; zap&#x142;aci&#x107;,&#xa;- licytacj&#x119; (o ile mia&#x142;a miejsce) wygrywa gracz, kt&#xf3;ry zadeklarowa&#x142; najwi&#x119;ksz&#x105; ilo&#x15b;&#x107; lew."/>
+                    <Property name="wrapStyleWord" type="boolean" value="true"/>
                   </Properties>
                 </Component>
               </SubComponents>

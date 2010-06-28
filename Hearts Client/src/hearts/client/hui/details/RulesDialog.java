@@ -43,12 +43,14 @@ public class RulesDialog extends javax.swing.JDialog {
         jTextArea3 = new javax.swing.JTextArea();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-        setResizable(false);
+        setMinimumSize(new java.awt.Dimension(500, 400));
 
         jTextArea1.setColumns(20);
         jTextArea1.setEditable(false);
+        jTextArea1.setLineWrap(true);
         jTextArea1.setRows(5);
-        jTextArea1.setText("W grze bierze udział pełna talia kart (52 karty). \nStarszeństwo kart od asa do dwójki. Jedną kolejkę w której każdy gracz(wg wskaz. zegara) \nkładzie jedną kartę nazywamy lewą. Pierwszą lewę rozpoczyna gracz  na lewo od rozdającego, \nkażdą następną - gracz który zabrał poprzednią lewę. Gracze rozdają kolejno wg ruchu wskazówek \nzegara. Kolorem wistującym jest kolor karty wyrzuconej jako pierwsza w lewie.\n\nślizg - jeżeli w rozdaniu któryś z graczy nie weźmie ani jednej lewy\nmax – w rozdaniu jeden gracz bierze wszystkie lewy\n\nGra składa się z 3 części:\n- zbój (punktowanie ujemne – 4 rozdania) – należy nie brać lewych\n- odgrywka (punktowanie dodatnie – 4 rozdania) – należy brać lewe\n- rozbójnik (dodatkowe rozdania za ślizgi i maxy – rozgrywka w bez atu)\n\nW pierwszej lewie nie wolno odrzucić króla kier, a kiery są kolorem granym wówczas \ngdy wistujący nie ma w ręce innego koloru. Można kiery też wyrzucać wtedy \ngdy nie posiadamy koloru wistowanego. \n\nNie mając do koloru odrzucamy dowolną kartę.\n\nPrzyznawanie dodatkowych rozdań w bez atu (rozbójnik) w zbóju lub odgrywce:\n- za każde x2 – 1 rozdanie\n- za każde x3 – 2 rozdania\n- za maxa – 3 rozdania");
+        jTextArea1.setText("W grze bierze udział pełna talia kart (52 karty). \nStarszeństwo kart od asa do dwójki. Jedną kolejkę w której każdy gracz(wg wskaz. zegara) kładzie jedną kartę nazywamy lewą. Pierwszą lewę rozpoczyna gracz  na lewo od rozdającego, każdą następną - gracz który zabrał poprzednią lewę. Gracze rozdają kolejno wg ruchu wskazówek zegara. Kolorem wistującym jest kolor karty wyrzuconej jako pierwsza w lewie.\n\nślizg - jeżeli w rozdaniu któryś z graczy nie weźmie ani jednej lewy\nmax – w rozdaniu jeden gracz bierze wszystkie lewy\n\nGra składa się z 3 części:\n- zbój (punktowanie ujemne – 4 rozdania) – należy nie brać lewych\n- odgrywka (punktowanie dodatnie – 4 rozdania) – należy brać lewe\n- rozbójnik (dodatkowe rozdania za ślizgi i maxy – rozgrywka w bez atu)\n\nW pierwszej lewie nie wolno odrzucić króla kier, a kiery są kolorem granym wówczas gdy wistujący nie ma w ręce innego koloru. Można kiery też wyrzucać wtedy gdy nie posiadamy koloru wistowanego. \n\nNie mając do koloru odrzucamy dowolną kartę.\n\nPrzyznawanie dodatkowych rozdań w bez atu (rozbójnik) w zbóju lub odgrywce:\n- za każde x2 – 1 rozdanie\n- za każde x3 – 2 rozdania\n- za maxa – 3 rozdania");
+        jTextArea1.setWrapStyleWord(true);
         jScrollPane1.setViewportView(jTextArea1);
 
         jTabbedPane1.addTab("Zasady ogólne", jScrollPane1);
@@ -61,41 +63,21 @@ public class RulesDialog extends javax.swing.JDialog {
 
         jTabbedPane1.addTab("Zasady punktowania", jScrollPane2);
 
+        jPanel1.setLayout(new java.awt.BorderLayout());
+
         jTextArea3.setColumns(20);
         jTextArea3.setEditable(false);
+        jTextArea3.setLineWrap(true);
         jTextArea3.setRows(5);
-        jTextArea3.setText("Dodatkowo w odgrywce i rozbójniku w każdym rozdaniu przed pierwszą lewą ma miejsce licytacja \nprawa do wistowania i wyboru atu (tylko odgrywka, bo rozbójnik w bez atu) w zamian za lewy \nzdobyte przez danego użytkownika (po zakończeniu rozdania od stanu punktów zwycięzcy licytacji\nodejmowane jest 10pkt * wylicytowana ilość lew).\n\n\nPrzebieg licytacji:\n- posiadający prawo wistowania decyduje czy chce oddać to prawo na licytacje\n- pozostali użytkownicy decydują czy chcą wziąć udział w licytacji i deklarują ilość lew, które chcą\nzapłacić\n- licytację (o ile miała miejsce) wygrywa gracz, który zadeklarował największą ilość lew");
+        jTextArea3.setText("Dodatkowo w odgrywce i rozbójniku w każdym rozdaniu przed pierwszą lewą ma miejsce licytacja prawa do wistowania i wyboru atu (tylko odgrywka, bo rozbójnik w bez atu) w zamian za lewy zdobyte przez danego użytkownika (po zakończeniu rozdania od stanu punktów zwycięzcy licytacji odejmowane jest 10pkt * wylicytowana ilość lew).\n\n\nPrzebieg licytacji:\n- posiadający prawo wistowania decyduje czy chce oddać to prawo na licytacje,\n- pozostali użytkownicy decydują czy chcą wziąć udział w licytacji i deklarują ilość lew, które chcą zapłacić,\n- licytację (o ile miała miejsce) wygrywa gracz, który zadeklarował największą ilość lew.");
+        jTextArea3.setWrapStyleWord(true);
         jScrollPane3.setViewportView(jTextArea3);
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 579, Short.MAX_VALUE)
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 377, Short.MAX_VALUE)
-        );
+        jPanel1.add(jScrollPane3, java.awt.BorderLayout.CENTER);
 
         jTabbedPane1.addTab("Licytacja", jPanel1);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jTabbedPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 584, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jTabbedPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 405, Short.MAX_VALUE)
-                .addContainerGap())
-        );
+        getContentPane().add(jTabbedPane1, java.awt.BorderLayout.CENTER);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

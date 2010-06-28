@@ -63,14 +63,13 @@ public class MainFrame
         lobbyPanel = new hearts.client.hui.LobbyPanel();
         loginPanel = new hearts.client.hui.LoginPanel();
         mainMenuBar = new javax.swing.JMenuBar();
-        gameMenu = new javax.swing.JMenu();
-        jMenuItem1 = new javax.swing.JMenuItem();
         helpMenu = new javax.swing.JMenu();
         aboutItem = new javax.swing.JMenuItem();
         jSeparator1 = new javax.swing.JSeparator();
+        jMenuItem1 = new javax.swing.JMenuItem();
         showDeck = new javax.swing.JMenuItem();
-        runTest1Item = new javax.swing.JMenuItem();
         jMenuItem2 = new javax.swing.JMenuItem();
+        runTest1Item = new javax.swing.JMenuItem();
         jMenuItem3 = new javax.swing.JMenuItem();
 
         gameTable.setGui(this);
@@ -85,16 +84,9 @@ public class MainFrame
         loginPanel.setGui(this);
         getContentPane().add(loginPanel, java.awt.BorderLayout.CENTER);
 
-        gameMenu.setText("Gra");
-
-        jMenuItem1.setText("jMenuItem1");
-        gameMenu.add(jMenuItem1);
-
-        mainMenuBar.add(gameMenu);
-
         helpMenu.setText("Pomoc");
 
-        aboutItem.setText("O grze...");
+        aboutItem.setText("Zasady gry...");
         aboutItem.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 aboutItemActionPerformed(evt);
@@ -102,6 +94,10 @@ public class MainFrame
         });
         helpMenu.add(aboutItem);
         helpMenu.add(jSeparator1);
+
+        jMenuItem1.setText("Opcje deweliopierskie:");
+        jMenuItem1.setEnabled(false);
+        helpMenu.add(jMenuItem1);
 
         showDeck.setText("Zaprezentuj talię kart");
         showDeck.addActionListener(new java.awt.event.ActionListener() {
@@ -111,14 +107,6 @@ public class MainFrame
         });
         helpMenu.add(showDeck);
 
-        runTest1Item.setText("Pierwszy test stołu");
-        runTest1Item.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                runTest1ItemActionPerformed(evt);
-            }
-        });
-        helpMenu.add(runTest1Item);
-
         jMenuItem2.setText("Pokaż dialog wyboru Trumpa");
         jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -126,6 +114,14 @@ public class MainFrame
             }
         });
         helpMenu.add(jMenuItem2);
+
+        runTest1Item.setText("Pierwszy test stołu");
+        runTest1Item.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                runTest1ItemActionPerformed(evt);
+            }
+        });
+        helpMenu.add(runTest1Item);
 
         jMenuItem3.setText("Pokaz aukcje");
         jMenuItem3.addActionListener(new java.awt.event.ActionListener() {
@@ -196,7 +192,6 @@ public class MainFrame
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenuItem aboutItem;
-    private javax.swing.JMenu gameMenu;
     private hearts.client.hui.GameTable gameTable;
     private javax.swing.JMenu helpMenu;
     private javax.swing.JMenuItem jMenuItem1;
