@@ -1,5 +1,9 @@
+Ten plik zawiera informacje nt. postępu prac.
+Opisuje kolejne kamienie milowe projektu oraz zaznacza
+naszą pozycję na osi postępu projektu ;)
+
 * Palpitacje
-  - HUI
+  - HUI - Human User Interface
   - jeden stół na serwer
   - autoryzacja kto pierwszy ten lepszy
 
@@ -7,13 +11,15 @@
   - lobby, logowanie
 
 * Zawały i resuscytacje
-  - wstrzymywanie i wznawianie
   - dokumentacja logiki
     - akcje na stanie serwera => akcje na stanie klienta
     - akcje na stanie klienta => akcje na HUI
     - warunki występowania błędów
+  - podręcznik użytkownika
+    
+<-- M/W TU JESTEŚMY -->
 
 * Marzenia ściętej głowy
-  - grafika
+  - grafika (w sensie ładniejsze karty)
+  - wstrzymywanie i wznawianie
   - przywracanie haseł
-  - podręcznik użytkownika
